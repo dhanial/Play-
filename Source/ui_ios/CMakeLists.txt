@@ -49,13 +49,11 @@ find_library(IMAGEIO_LIBRARY NAMES ImageIO)
 set(OSX_SOURCES
 	AppDelegate.mm
 	BackgroundLayer.m
-	CollectionView.m
 	CoverViewCell.m
 	CoverViewController.m
 	EmulatorViewController.mm
 	GlEsView.mm
 	GSH_OpenGLiOS.cpp
-	IosUtils.cpp
 	main.mm
 	SettingsViewController.mm
 	SqliteDatabase.m
@@ -68,13 +66,11 @@ set(OSX_SOURCES
 set(OSX_HEADERS
 	AppDelegate.h
 	BackgroundLayer.h
-	CollectionView.h
 	CoverViewCell.h
 	CoverViewController.h
 	EmulatorViewController.h
 	GlEsView.h
 	GSH_OpenGLiOS.h
-	IosUtils.h
 	SettingsViewController.h
 	SqliteDatabase.h
 	VirtualPadButton.h
