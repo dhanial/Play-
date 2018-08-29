@@ -56,7 +56,6 @@ set(OSX_SOURCES
 	GSH_OpenGLiOS.cpp
 	main.mm
 	SettingsViewController.mm
-	SqliteDatabase.m
 	VirtualPadButton.mm
 	VirtualPadItem.mm
 	VirtualPadStick.mm
@@ -72,7 +71,6 @@ set(OSX_HEADERS
 	GlEsView.h
 	GSH_OpenGLiOS.h
 	SettingsViewController.h
-	SqliteDatabase.h
 	VirtualPadButton.h
 	VirtualPadItem.h
 	VirtualPadStick.h
