@@ -466,8 +466,11 @@ void VUShared::ADD(CMipsJitter* codeGen, uint8 nDest, uint8 nFd, uint8 nFs, uint
 		nFd = 32;
 	}
 
+	//Clamping is needed here for Castlevania LoI and CoD. Seems to be dividing by 0 and using result in VADD.
 	codeGen->MD_PushRel(offsetof(CMIPS, m_State.nCOP2[nFs]));
+	ClampVector(codeGen);
 	codeGen->MD_PushRel(offsetof(CMIPS, m_State.nCOP2[nFt]));
+	ClampVector(codeGen);
 	codeGen->MD_AddS();
 	PullVector(codeGen, nDest, offsetof(CMIPS, m_State.nCOP2[nFd]));
 
